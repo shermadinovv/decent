@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "499270982544",
+    "firebase_url": "https://decentkz-f227d-default-rtdb.firebaseio.com",
+    "project_id": "decentkz-f227d",
+    "storage_bucket": "decentkz-f227d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499270982544:android:dd3e369f2d9efc82d8b115",
+        "android_client_info": {
+          "package_name": "com.android.decentkz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499270982544-c1ta6odrivc4norta07ep3bae4e78rr8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.decentkz",
+            "certificate_hash": "77b316a9bf09b1c855c6f5559c81dcd386bbd7a2"
+          }
+        },
+        {
+          "client_id": "499270982544-18kac6evnucckekl58ghm5sg32jmcfp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYgB-08II-0OZ98qJ6pmNI4Qy2_NWiLeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499270982544-18kac6evnucckekl58ghm5sg32jmcfp3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

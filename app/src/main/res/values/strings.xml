@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Decent Online Store</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="main_lay">Главная страница</string>
+    <string name="menu_home">Товары</string>
+    <string name="menu_logout">Выйти</string>
+    <string name="menu_cart">Корзина</string>
+    <string name="menu_orders">Мои заказы</string>
+
+    <string-array name="province">
+        <item>Выберите ваш регион</item>
+        <item>Punjab</item>
+    </string-array>
+    <string-array name="cities">
+        <item>Выберите город</item>
+        <item>Алматы</item>
+        <item>Астана</item>
+        <item>Шымкент</item>
+    </string-array>
+    <string name="title_activity_item_detail_host">ItemDetailHostActivity</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+</resources>
