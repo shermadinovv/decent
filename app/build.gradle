@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.android.decentkz"
+        applicationId "com.diplomkz.decentkz"
         minSdkVersion 22
         targetSdkVersion 33
         versionCode 1
@@ -16,6 +16,7 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+        signingConfig signingConfigs.debug
     }
 
     buildTypes {

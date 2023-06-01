@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Decent_color1"
-    tools:context=".Admin.ViewAllProductsActivity">
+    tools:context="com.diplomkz.decentkz.Admin.ViewAllProductsActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card1"
@@ -66,7 +66,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/product_list"
+        android:id="@+id/product_list2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/card2"

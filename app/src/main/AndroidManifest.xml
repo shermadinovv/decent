@@ -17,48 +17,48 @@
         android:theme="@style/Theme.EasyShopping"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".MainActivity2"
+            android:name="com.diplomkz.decentkz.MainActivity2"
             android:exported="false" />
 
         <activity
-            android:name=".SearchFiltersActivity"
+            android:name="com.diplomkz.decentkz.SearchFiltersActivity"
             android:exported="true" />
         <activity
-            android:name="com.android.decentkz.Admin.CustomersOrders"
+            android:name="com.diplomkz.decentkz.Admin.CustomersOrders"
             android:exported="true" />
         <activity
-            android:name=".ProductDetailsActivity"
+            android:name="com.diplomkz.decentkz.ProductDetailsActivity"
             android:exported="true" />
-        <activity android:name="com.android.decentkz.Admin.ViewAllProductsActivity" />
-        <activity android:name="com.android.decentkz.Admin.NewProductActivity" />
+        <activity android:name="com.diplomkz.decentkz.Admin.ViewAllProductsActivity" />
+        <activity android:name="com.diplomkz.decentkz.Admin.NewProductActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.diplomkz.decentkz.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.EasyShopping.NoActionBar" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.diplomkz.decentkz.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".SignupUserActivity"
+            android:name="com.diplomkz.decentkz.SignupUserActivity"
             android:exported="true" />
         <activity
-            android:name=".CartActivity"
+            android:name="com.diplomkz.decentkz.CartActivity"
             android:exported="true" />
         <activity
-            android:name=".CheckOutActivity"
+            android:name="com.diplomkz.decentkz.CheckOutActivity"
             android:exported="true" />
         <activity
-            android:name="com.android.decentkz.Admin.AdminHome"
+            android:name="com.diplomkz.decentkz.Admin.AdminHome"
             android:exported="true" />
         <activity
-            android:name="com.android.decentkz.Admin.AdminLoginActivity"
+            android:name="com.diplomkz.decentkz.Admin.AdminLoginActivity"
             android:exported="true" />
         <activity
-            android:name=".EventLocationActivity"
+            android:name="com.diplomkz.decentkz.EventLocationActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreen"
+            android:name="com.diplomkz.decentkz.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

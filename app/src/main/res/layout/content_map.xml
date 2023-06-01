@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".EventLocationActivity"
+    tools:context="com.diplomkz.decentkz.EventLocationActivity"
     tools:showIn="@layout/activity_event_location">
 
 <!--    <fragment android:id="@+id/autocomplete_fragment"-->
@@ -44,7 +44,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="30dp"
         android:background="@drawable/button_shape"
-        android:text="Pick a location"
+        android:text="Выберите локацию"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="16sp"

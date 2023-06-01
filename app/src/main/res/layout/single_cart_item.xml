@@ -5,17 +5,22 @@
     android:id="@+id/parent"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="10dp"
-    android:layout_marginTop="5dp"
-    android:layout_marginEnd="10dp"
-    android:layout_marginBottom="5dp">
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginBottom="5dp"
+    android:background="@color/home_bg"
+    android:padding="10dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/img_card"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_centerVertical="true"
-        android:layout_margin="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
         android:elevation="20dp"
         app:cardCornerRadius="10dp">
 
@@ -47,7 +52,7 @@
                 android:fontFamily="@font/crimson_text_semibold"
                 android:text="Facial Cleanser"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
             <ImageView
                 android:id="@+id/img_delete"
@@ -56,6 +61,40 @@
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:src="@drawable/ic_cross" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="sans-serif-black"
+                android:text="Facial Cleanser"
+                android:textColor="@color/decent_color2"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/product_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Facial Cleanser"
+                android:textColor="@color/decent_color2"
+                android:textSize="12sp" />
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -113,5 +152,6 @@
 
 
         </RelativeLayout>
+
     </LinearLayout>
 </RelativeLayout>

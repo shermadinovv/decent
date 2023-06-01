@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/custom_edit_text"
     android:orientation="vertical"
-    tools:context=".SearchFiltersActivity">
+    tools:context="com.diplomkz.decentkz.SearchFiltersActivity">
 
     <RelativeLayout
         android:id="@+id/toolbar"

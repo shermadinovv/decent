@@ -6,7 +6,7 @@
     android:background="@color/Decent_color1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Admin.NewProductActivity">
+    tools:context="com.diplomkz.decentkz.Admin.NewProductActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
@@ -38,43 +38,102 @@
                     android:textStyle="bold" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/upload_img_card"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_margin="10dp"
-            app:cardCornerRadius="10dp"
             android:elevation="10dp"
-            android:layout_height="200dp">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+            app:cardCornerRadius="10dp">
 
-                <ImageView
-                    android:id="@+id/product_image"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/custom_edit_text"
-                    android:src="@drawable/ic_upload_photo" />
-                <ImageView
-                    android:id="@+id/upload_image_btn"
-                    android:layout_width="24dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:src="@drawable/ic_camera_24"
-                    android:layout_height="24dp"
-                    android:elevation="50dp"
-                    app:tint="@color/black" />
-            </RelativeLayout>
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/product_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edit_text"
+                        android:src="@drawable/ic_upload_photo" />
+
+                    <ImageView
+                        android:id="@+id/upload_image_btn"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:elevation="50dp"
+                        android:src="@drawable/ic_camera_24"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
         </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/upload_img_card2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/product_image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_edit_text"
+                        android:src="@drawable/ic_upload_photo"
+                        tools:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/upload_image_btn2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:elevation="50dp"
+                        android:src="@drawable/ic_camera_24"
+                        app:tint="@color/black" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:orientation="vertical"
-            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="15dp"
-            android:layout_height="wrap_content">
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/product_name_et"
@@ -89,16 +148,18 @@
                 android:singleLine="true"
                 android:textColorHint="@color/text_color"
                 android:textSize="16sp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:visibility="visible"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:layout_height="wrap_content">
+                android:orientation="vertical"
+                android:visibility="visible">
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:background="@drawable/text_input_bg"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_input_bg">
 
                     <Spinner
                         android:id="@+id/product_category_Spinner"
@@ -107,16 +168,18 @@
                         android:layout_margin="1dp" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:visibility="visible"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:layout_height="wrap_content">
+                android:orientation="vertical"
+                android:visibility="visible">
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:background="@drawable/text_input_bg"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_input_bg">
 
                     <Spinner
                         android:id="@+id/product_brand_Spinner"
@@ -125,16 +188,18 @@
                         android:layout_margin="1dp" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:visibility="visible"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:layout_height="wrap_content">
+                android:orientation="vertical"
+                android:visibility="visible">
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:background="@drawable/text_input_bg"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_input_bg">
 
                     <Spinner
                         android:id="@+id/product_size_type_Spinner"
@@ -143,23 +208,25 @@
                         android:layout_margin="1dp" />
                 </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/top_size_layout"
                 android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:visibility="gone"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:layout_height="wrap_content">
+                android:orientation="vertical"
+                android:visibility="gone">
+
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:background="@drawable/text_input_bg"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_input_bg">
+
                     <Spinner
                         android:id="@+id/product_size_Spinner"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:layout_margin="1dp"
-                        />
+                        android:layout_margin="1dp" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -211,38 +278,41 @@
                 android:textSize="16sp" />
 
             <TextView
-                android:text="Описание"
-                android:textColor="@color/black"
-                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
-                <LinearLayout
-                    android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Описание"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/text_input_bg">
+
+                <EditText
+                    android:id="@+id/description_tv"
                     android:layout_width="match_parent"
-                    android:background="@drawable/text_input_bg"
-                    android:layout_height="wrap_content">
-                    <EditText
-                        android:id="@+id/description_tv"
-                        android:hint="Добавьте описание сюда"
-                        android:textColor="@color/black"
-                        android:gravity="start|top"
-                        android:minLines="4"
-                        android:layout_marginStart="5dp"
-                        android:background="@null"
-                        android:inputType="textMultiLine"
-                        android:padding="6dp"
-                        android:textSize="16sp"
-                        android:layout_gravity="center_vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"/>
-                </LinearLayout>
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:background="@null"
+                    android:gravity="start|top"
+                    android:hint="Добавьте описание сюда"
+                    android:inputType="textMultiLine"
+                    android:minLines="4"
+                    android:padding="6dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
             <ProgressBar
                 android:id="@+id/progress_bar"
-                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
-                android:visibility="gone"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_height="wrap_content"/>
+                android:layout_marginTop="20dp"
+                android:visibility="gone" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/add_btn"

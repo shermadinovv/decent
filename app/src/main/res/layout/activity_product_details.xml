@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/Decent_color1"
-    tools:context=".ProductDetailsActivity">
+    android:layout_height="wrap_content"
+    android:background="@color/reveive_messege_bubble"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context="com.diplomkz.decentkz.ProductDetailsActivity">
 
 
     <ImageView
@@ -14,135 +16,303 @@
         android:layout_height="24dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
         android:onClick="goBack"
         android:src="@drawable/ic_back_arrow"
         app:tint="@color/black" />
 
-
-    <ImageView
-        android:id="@+id/product_img"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_card"
-        android:layout_below="@+id/ic_back"
-        android:layout_marginStart="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/bottom_card"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:elevation="20dp"
-        app:cardCornerRadius="20dp">
+        android:scrollbarStyle="outsideOverlay">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="306dp"
-            android:orientation="vertical"
-            android:padding="20dp">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/product_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/crimson_text_semibold"
-                android:text="Facial Cleanser"
-                android:textColor="@color/black"
-                android:textSize="22sp" />
-
-            <TextView
-                android:id="@+id/product_description"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/crimson_text_semibold"
-                android:maxLines="3"
-                android:text="Facial Cleanser is the best face wash for your skin"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <RelativeLayout
+            <ImageView
+                android:id="@+id/product_img"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp">
+                android:layout_height="350dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="visible" />
 
-                <TextView
-                    android:id="@+id/product_price"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:fontFamily="@font/crimson_text_semibold"
-                    android:text="₸ 9.99"
-                    android:textColor="@color/black"
-                    android:textSize="24sp" />
-
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bottom_card"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                tools:visibility="visible">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_marginEnd="20dp"
-                    android:layout_toLeftOf="@id/add_to_cart_btn"
-                    android:background="@drawable/quantity_background"
-                    android:padding="5dp">
+                    android:layout_width="match_parent"
+                    android:layout_height="330dp"
+                    android:orientation="vertical"
+                    android:padding="20dp">
 
                     <TextView
-                        android:id="@+id/minus_btn"
-                        android:layout_width="30dp"
+                        android:id="@+id/product_name"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="-"
-                        android:textSize="16sp" />
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/lora_bold"
+                        android:text="Facial Cleanser"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/quantity_tv"
-                        android:layout_width="30dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="1"
-                        android:textSize="16sp" />
 
-                    <TextView
-                        android:id="@+id/plus_btn"
-                        android:layout_width="30dp"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="+"
-                        android:textSize="16sp" />
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/description"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/crimson_text_semibold"
+                            android:text="Описание:"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/product_description"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/lora_regular"
+                            android:maxLines="3"
+                            android:text="Facial Cleanser is the best face wash for your skinоривыимрориаспрвафытватфшырвиочщсвтвфшварыгв"
+                            android:textColor="@color/bottam_nav_icon_color"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvcategorytext"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/crimson_text_semibold"
+                            android:text="Категория:"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvcategory"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/lora_regular"
+                            android:maxLines="3"
+                            android:text="Facial Cleanser is the best face wash for your skin"
+                            android:textColor="@color/bottam_nav_icon_color"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvcolortext"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/crimson_text_semibold"
+                            android:text="Цвет:"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvcolor"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/lora_regular"
+                            android:maxLines="3"
+                            android:text="Facial Cleanser is the best face wash for your skin"
+                            android:textColor="@color/bottam_nav_icon_color"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvsizetext"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/crimson_text_semibold"
+                            android:text="Размер:"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tvsize"
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:fontFamily="@font/lora_regular"
+                            android:maxLines="3"
+                            android:text="Facial Cleanser is the best face wash for your skin"
+                            android:textColor="@color/bottam_nav_icon_color"
+                            android:textSize="16sp"
+                            android:textStyle="italic" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp">
+
+                        <TextView
+                            android:id="@+id/product_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/crimson_text_semibold"
+                            android:text="₸ 9.99"
+                            android:textColor="@color/black"
+                            android:textSize="24sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="20dp"
+                            android:layout_toLeftOf="@id/add_to_cart_btn"
+                            android:background="@drawable/quantity_background"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/minus_btn"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/quantity_tv"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/plus_btn"
+                                android:layout_width="30dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="+"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/add_to_cart_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:elevation="10dp"
+                            app:cardBackgroundColor="@color/black"
+                            app:cardCornerRadius="10dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="10dp"
+                                android:text="В КОРЗИНУ"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </androidx.cardview.widget.CardView>
+
+
+                    </RelativeLayout>
+
+
                 </LinearLayout>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/add_to_cart_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"
-                    android:elevation="10dp"
-                    app:cardBackgroundColor="@color/black"
-                    app:cardCornerRadius="10dp">
+            </androidx.cardview.widget.CardView>
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="10dp"
-                        android:text="В КОРЗИНУ"
-                        android:textColor="@color/white"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-                </androidx.cardview.widget.CardView>
-            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/no_product2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="No Product found"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/spin_progress_bar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Другие товары"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/product_list2"
+                android:layout_width="match_parent"
+                android:layout_height="3000dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:overScrollMode="never"
+                android:visibility="visible"
+                tools:listitem="@layout/single_product_layout">
+
+            </androidx.recyclerview.widget.RecyclerView>
 
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/white"
-        android:elevation="100dp" />
+    </ScrollView>
 
 
-</RelativeLayout>
+</LinearLayout>

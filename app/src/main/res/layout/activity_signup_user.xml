@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Decent_color1"
-    tools:context=".SignupUserActivity">
+    tools:context="com.diplomkz.decentkz.SignupUserActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
